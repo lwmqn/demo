@@ -1,0 +1,17 @@
+{
+  "name": "lwmqn-demo",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "NODE_ENV=production node main"
+  },
+  "dependencies": {
+    "busyman": "0.2.1",
+    "chalk": "1.1.3",
+    "express": "4.14.0",
+    "mqtt-node": "0.3.13",
+    "mqtt-shepherd": "0.3.1",
+    "smartobject": "1.1.0",
+    "socket.io": "1.4.8"
+  }
+}
