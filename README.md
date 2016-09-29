@@ -1,9 +1,7 @@
 # lwmqn-demo  
-A simple webapp built with [mqtt-shepherd](https://github.com/lwmqn/mqtt-shepherd) and [mqtt-node](https://github.com/lwmqn/mqtt-node).  
+A simple webapp built with [mqtt-shepherd](https://github.com/lwmqn/mqtt-shepherd) and [mqtt-node](https://github.com/lwmqn/mqtt-node) to mimic a smart home application.  
 
-This project is a quick demo that shows you what [mqtt-shepherd](https://github.com/lwmqn/mqtt-shepherd) can do, e,g,. allowing devices to join, making some remote operations upon remote devices.  
-
-### Install and Run
+### To run the demo
 
 * Install
 ```sh  
@@ -18,6 +16,6 @@ $ cd lwmqn-demo
 ```
 
 * Open up http://localhost:3000/ with your browser
-* In the app, click **PERMIT JOIN** to run the demo, and you will see serveral devices coming to the machine network and doing something fun.
+* In the app, click **PERMIT JOIN** to run the demo, and you will see serveral devices joining the machine network one after another and doing something fun.
   
 ![Demo](https://github.com/lwmqn/documents/blob/master/media/demo.gif)
