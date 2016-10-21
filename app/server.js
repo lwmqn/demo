@@ -328,7 +328,7 @@ function showWelcomeMsg() {
     console.log(chalk.gray('   A Lightweight MQTT Machine Network Server'));
     console.log('');
     console.log('   >>> Author:     Simen Li (simenkid@gmail.com)');
-    console.log('   >>> Version:    mqtt-shepherd v0.3.x');
+    console.log('   >>> Version:    mqtt-shepherd v0.6.x');
     console.log('   >>> Document:   https://github.com/lwmqn/mqtt-shepherd');
     console.log('   >>> Copyright (c) 2016 Simen Li, The MIT License (MIT)');
     console.log('');
@@ -447,14 +447,20 @@ function startObservingD01(qnode) {
     setTimeout(function () {
         qnode.writeAttrsReq('temperature/0/sensorValue', { pmin: 1, pmax: 60, stp: 0.1 }).then(function (rsp) {
             return qnode.observeReq('temperature/0/sensorValue');
+        }).fail(function (err) {
+            console.log(err);
         }).done();
 
         qnode.writeAttrsReq('humidity/0/sensorValue', { pmin: 1, pmax: 60, stp: 0.1 }).then(function (rsp) {
             return qnode.observeReq('humidity/0/sensorValue');
+        }).fail(function (err) {
+            console.log(err);
         }).done();
 
         qnode.writeAttrsReq('illuminance/1/sensorValue', { pmin: 1, pmax: 60, stp: 1 }).then(function (rsp) {
             return qnode.observeReq('illuminance/1/sensorValue');
+        }).fail(function (err) {
+            console.log(err);
         }).done();
     }, 600);
 }
