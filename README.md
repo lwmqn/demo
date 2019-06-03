@@ -1,21 +1,25 @@
-# lwmqn-demo  
-A simple webapp built with [mqtt-shepherd](https://github.com/lwmqn/mqtt-shepherd) and [mqtt-node](https://github.com/lwmqn/mqtt-node) to mimic a smart home application ([1 minute demo video](https://www.youtube.com/watch?v=AF_zcmEePHc)).  
+lwmqn-demo
+============
 
-### To run the demo
+A simple webapp built with [mqtt-shepherd](https://github.com/lwmqn/mqtt-shepherd) and [mqtt-node](https://github.com/lwmqn/mqtt-node) to mimic a smart home application ([1 minute demo video](https://www.youtube.com/watch?v=AF_zcmEePHc)).
 
-* Install
-```sh  
-$ git clone https://github.com/lwmqn/lwmqn-demo  
-$ cd lwmqn-demo  
-/lwmqn-demo $ npm install  
+--------
+
+## To run the demo
+
+###Install
+```sh
+$ git clone https://github.com/lwmqn/lwmqn-demo
+$ cd lwmqn-demo
+/lwmqn-demo $ npm install
 ```
 
 * Run the WebApp
-```shell  
-/lwmqn-demo $ npm start  
+```shell
+/lwmqn-demo $ npm start
 ```
 
 * Open up http://localhost:3000/ with your browser
 * In the app, click **PERMIT JOIN** to run the demo, and you will see serveral devices joining the machine network one after another and doing something fun.
-  
+
 ![Demo](https://github.com/lwmqn/documents/blob/master/media/demo.gif)
