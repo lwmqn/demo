@@ -1,4 +1,7 @@
 # lwmqn-demo  
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/lwmqn/lwmqn-demo.svg)](https://greenkeeper.io/)
+
 A simple webapp built with [mqtt-shepherd](https://github.com/lwmqn/mqtt-shepherd) and [mqtt-node](https://github.com/lwmqn/mqtt-node) to mimic a smart home application ([1 minute demo video](https://www.youtube.com/watch?v=AF_zcmEePHc)).  
 
 ### To run the demo
