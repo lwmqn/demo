@@ -1,7 +1,7 @@
 lwmqn-demo
 ============
 
-A simple webapp built with [mqtt-shepherd](https://github.com/lwmqn/mqtt-shepherd) and [mqtt-node](https://github.com/lwmqn/mqtt-node) to mimic a smart home application ([1 minute demo video](https://www.youtube.com/watch?v=AF_zcmEePHc)).
+A simple webapp built with [lwmqn-shepherd](https://github.com/lwmqn/lwmqn-shepherd) and [lwmqn-node](https://github.com/lwmqn/lwmqn-node) to mimic a smart home application ([1 minute demo video](https://www.youtube.com/watch?v=AF_zcmEePHc)).
 
 --------
 
