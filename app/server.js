@@ -1,6 +1,6 @@
-var http = require('http'); 
+var http = require('http');
 var chalk = require('chalk');
-var MqttShepherd = require('mqtt-shepherd');
+var MqttShepherd = require('@lwmqn/shepherd');
 var _ = require('busyman');
 
 var model = require('./model/model');
@@ -181,7 +181,7 @@ var app = function () {
         });
     });
 
-    ioServer.regReqHdlr('write', function (args, cb) { 
+    ioServer.regReqHdlr('write', function (args, cb) {
         // args = { permAddr, auxId, value }
         // register your req handler
         // cb(err, data);
@@ -196,7 +196,7 @@ var app = function () {
             rid = mainResourceName(oid);
         var rscPath = oid + '/' + iid + '/' + rid;
         var qnode = qserver.find(clientId);
-        
+
         if (!qnode)
             setImmediate(function () {
                 cb(new Error('Gadget not found.'));

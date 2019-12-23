@@ -1,7 +1,7 @@
-var MqttNode = require('mqtt-node'),
-    SmartObject = require('smartobject');
+var Qnode = require('@lwmqn/qnode'),
+    SmartObject = require('@lwmqn/smartobject');
 
-// We need 8 gadgets: 
+// We need 8 gadgets:
 // qnode1, so1: Temperature, Humidity, Illuminance
 // qnode2, so2: Switch
 // qnode3, so3: Buzzer, Light
